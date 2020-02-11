@@ -1,4 +1,4 @@
-const elementCount = 20;
+const elementCount = 21;
 let element;
 
 function randomize() {
@@ -8,15 +8,15 @@ function randomize() {
 		element = document.getElementById("a" + i);
 		let color = Math.floor(Math.random() * 16777216).toString();
 		element.style.color = "#" + color;
-		let size = Math.floor(Math.random() * 1000);
+		let size = Math.floor(Math.random() * 1000) + 1;
 		element.style.width = size;
-		size = Math.floor(Math.random() * 1000);
+		size = Math.floor(Math.random() * 1000) + 1;
 		element.style.height = size;
 
-		size = Math.floor(Math.random() * 100);
-		element.style.fontSize = size + 1;		
+		size = Math.floor(Math.random() * 100) + 1;
+		element.style.fontSize = size;		
 
-		size = Math.floor(Math.random() * 100);
+		size = Math.floor(Math.random() * 100) + 1;
 		element.style.paddingLeft = size;
 	}
 }
